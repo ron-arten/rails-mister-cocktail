@@ -1,0 +1,11 @@
+<h1>What's Tasty?</h1>
+
+<%= simple_form_for([@cocktail, @dose]) do |f| %>
+  <div class="form-group">
+  <%= f.input :description, required: true %>
+  <%= f.association :ingredient, required: true %>
+</div>
+
+
+<%= f.button :submit %>
+<% end %>
