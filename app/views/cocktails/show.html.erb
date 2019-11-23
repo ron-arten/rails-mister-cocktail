@@ -1,7 +1,7 @@
 <body>
 <div class='container'>
 <h1><%= @cocktail.name%></h1>
-<%#= link_to "Add dose", doses_path %>
+<%= link_to "Add dose", doses_path %>
 <h3>Ingredients:</h3>
 <% @cocktail.doses.each do |dose|%>
 <p><%= dose.description%></p><strong><%= dose.ingredient.name %></strong>
